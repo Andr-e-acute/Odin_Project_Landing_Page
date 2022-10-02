@@ -66,11 +66,11 @@ body{
     font-size: 18px;
     color: #e5e7eb;
 }
-.hero .signup-button{
+.signup-button{
     background: #3882f6;
     color: #F9faf8;
     font-weight: bold;
-    padding: 8px 25px;
+    padding: 6px 30px;
     margin: 10px 0;
     border-radius: 5px;
     border: none;
@@ -136,7 +136,36 @@ figure.quote figcaption{
     font-weight: bold;
     text-align: right;
 }
-
+.callToAction{
+    min-height:450px;
+    padding: 100px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.call-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #3882f6;
+    padding: 30px 100px;
+    color: #F9faf8;
+    border-radius: 8px;
+    width: 70vw;
+    max-width: 1100px;
+    
+}
+.call-container .signup-button{
+    border:2px solid #F9faf8
+}
+.call-container h4{
+    font-weight: bolder;
+    font-size: 18px;
+}
+.call-container p{
+    color:#e5e7eb;
+}
 
 @media(max-width:650px){
     .header-container{
@@ -146,5 +175,12 @@ figure.quote figcaption{
     .navbar{
         padding: 15px;
         display: block;
+    }
+    .callToAction{
+        padding: 15px;
+        min-height: 0px;
+    }
+    .call-container{
+        padding: 15px;
     }
 }
